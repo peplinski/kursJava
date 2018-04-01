@@ -18,12 +18,12 @@ public class ZadSet {
 */
     public static void main(String[] args) {
         Set<Integer> liczby = new HashSet<>();
-        liczby.addAll(Arrays.asList(10,12,10,3,4,12,12,300,12,40,5));
+        liczby.addAll(Arrays.asList(10, 12, 10, 3, 4, 12, 12, 300, 12, 40, 5));
         Set<Integer> intSet = new HashSet<>(liczby);
 
         System.out.println(liczby.size());
 
-        for (Integer element:liczby) {
+        for (Integer element : liczby) {
             System.out.println(element);
         }
 
@@ -31,14 +31,14 @@ public class ZadSet {
         Integer[] tablica = new Integer[intSet.size()];
 
         tablica = intSet.toArray(tablica);
-        for (Integer element: tablica) {
-            if(element==10 || element==12){
+        for (Integer element : tablica) {
+            if (element == 10 || element == 12) {
                 intSet.remove(element);
             }
         }
 
         System.out.println(intSet.size());
-        for (Integer element:intSet) {
+        for (Integer element : intSet) {
             System.out.println(element);
         }
 
