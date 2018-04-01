@@ -1,4 +1,4 @@
-package pl.kurs.marzec.podstawy.marzec;
+package pl.kurs.marzec.podstawy;
 
 public class Podstawy {
     public static void main(String[] args) {
