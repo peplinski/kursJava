@@ -80,6 +80,7 @@ public class StudentMain {
         for(Map.Entry<Student2,Integer> entry: entries) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
+        //mateusza
 //        Set<Map.Entry<Student2, Integer>> entries = iloscGodzin.entrySet();
 //        for (Map.Entry<Student2, Integer> entry : entries) {
 //            Student2 student2 = entry.getKey();
@@ -87,7 +88,43 @@ public class StudentMain {
 //            System.out.println(student2.getImie() + " " + student2.getNazwisko());
 //            System.out.println(" = " + godzina);
 //        }
+        Map<Student2,Integer> studenci1 = new HashMap<>();
+        Map<Student2,Integer> studenci2 = new HashMap<>();
+
+        studenci1.put(new Student2("a","a",1),1);
+        studenci1.put(new Student2("a","b",2),2);
+        studenci1.put(new Student2("a","c",3),3);
+        studenci1.put(new Student2("a","d",4),2);
+        studenci1.put(new Student2("a","b",5),5);
+
+        studenci2.put(new Student2("a","b",1),2);
+        studenci2.put(new Student2("a","b",2),5);
+        studenci2.put(new Student2("a","b",3),4);
+        studenci2.put(new Student2("a","b",4),3);
+        studenci2.put(new Student2("a","b",5),2);
+
+        //studenci1.putAll(studenci2);
+
+
+//        Integer result = studenci1.putIfAbsent(new Student2("a","b",4),2);
+//        /*
+//         * code logic to test if the values has been inserted
+//         * to the student database.
+//         */
+//        if(result!=null){ System.out.println("Id number taken of "+result); }
+//        else{ System.out.println("Successfully inseerted to the database"); }
+//        studenci1.putIfAbsent(new Student2("b","c",3),2);
+
+        for (Map.Entry<Student2,Integer>entry:studenci2.entrySet()){
+            studenci1.putIfAbsent(entry.getKey(),entry.getValue());
+        }
+        System.out.println(studenci1);
     }
+
+
+
+
+
 
     public static Student2 pobierzStudentów() {
         Scanner scanner = new Scanner(System.in);
