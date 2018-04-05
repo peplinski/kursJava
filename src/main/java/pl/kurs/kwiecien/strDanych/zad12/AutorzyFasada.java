@@ -1,8 +1,5 @@
 package pl.kurs.kwiecien.strDanych.zad12;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +18,6 @@ public class AutorzyFasada {
 
         return autorzy;
     }
-
 
     enum AUTHORS_KEYS {
         ID("id"), NAME("imie"), SURNAME("nazwisko");

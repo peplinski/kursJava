@@ -13,7 +13,7 @@ import java.util.Random;
         Random rand = new Random();
         for (int i = 0; i < 20; i++) {
             Map<String, String> map = new HashMap<>();
-            map.put(BOOKS_KEYS.TITLE.getValue(), "tutul" + i);
+            map.put(BOOKS_KEYS.TITLE.getValue(), "tytul" + i);
             map.put(BOOKS_KEYS.CENA.getValue(), "" + rand.nextInt(999));
             map.put(BOOKS_KEYS.AUTHOR.getValue(), "ID_" + rand.nextInt(5));
             ksiazki.add(map);

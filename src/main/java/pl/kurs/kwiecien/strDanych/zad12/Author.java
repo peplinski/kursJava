@@ -35,6 +35,12 @@ class Author {
     public List<Book> getKsiazki() {
         return ksiazki;
     }
+    public boolean isPolular(){
+        if (ksiazki.size()<5){
+            return false;
+        }
+            return true;
+    }
 
     @Override
     public String toString() {
