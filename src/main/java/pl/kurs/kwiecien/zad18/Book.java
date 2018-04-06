@@ -1,4 +1,4 @@
-package pl.kurs.kwiecien.strDanych.zad12;
+package pl.kurs.kwiecien.zad18;
 
 public class Book {
     String title;
